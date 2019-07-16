@@ -1,4 +1,5 @@
-import Test from './components/Test.js'
+import Navigation from './components/Navigation';
+import Content from './components/Content';
 
 export default {
   data: function() {
@@ -13,10 +14,10 @@ export default {
   },
   render() {
     return(
-      <p>
-      Test
-      <Test test={this.test}/>
-      </p>
+      <main>
+        <Navigation/>
+        <Content test={this.test}/>
+      </main>
     )
   }
 }
