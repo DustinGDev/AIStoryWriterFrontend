@@ -1,0 +1,38 @@
+.main-nav-button {
+    overflow: hidden;
+    height: 64px;
+    width: 64px;
+    background: #5491cf;
+    border-radius: 100px;
+    margin: 50px;
+    border: grey 4px;
+    border-style: ridge groove groove ridge;
+    position: relative;
+}
+
+.main-nav-button table {
+    height: 100%;
+    width: 100%;
+}
+
+.main-nav-button div {
+    background-color: rgba(255,255,255,0.4);
+    width: 104%;
+    height: 81.5%;
+    transform: rotate(40deg);
+    right: -4.8%;
+    top: 0px;
+    position: absolute;
+    border-radius: 40px;
+    filter: blur(14px);
+    transition: 0.5s;
+}
+
+.main-nav-button td {
+    border-bottom: rgba(0,0,0,0.2) 1px solid;
+    border-right: rgba(0,0,0,0.2) 1px solid
+}
+
+.main-nav-button:hover div {
+    background-color: rgba(255,255,255,0.6);
+}
