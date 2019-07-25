@@ -1,0 +1,27 @@
+nav {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    height: 90vh;
+    bottom: 0px;
+    flex-flow: column;
+    box-sizing: border-box;
+    background: #986a5e;
+    overflow: hidden;
+    width: 0px;
+    min-width: 0px;
+    padding: 0px;
+    padding-top: 10px;
+    transition: 0.5s;
+}
+
+nav a {
+    width: 100%;
+    height: fit-content;
+}
+
+nav.active {
+    width: 8vw;
+    min-width: 150px;
+    padding: 10px;
+}

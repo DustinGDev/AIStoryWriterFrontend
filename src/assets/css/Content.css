@@ -1,0 +1,5 @@
+.content-container {
+    background: #bf9e60;
+    flex-direction: row;
+    flex-grow: 1;
+}

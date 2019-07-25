@@ -1,8 +1,12 @@
+import './../assets/css/Content.css';
+
 export default {
     props: ['test'],
     render() {
         return (
-            <router-view test={this.test}></router-view>
+            <div class="content-container">
+                <router-view test={this.test}></router-view>
+            </div>
         )
     }
 }
