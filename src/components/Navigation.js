@@ -5,8 +5,8 @@ export default {
     render() {
         return (
             <nav class={this.activeNav ? 'active' : ''}>
-                <router-link to="/dashboard">Dashboard</router-link>
-                <router-link to="/competitions">Competitions</router-link>
+                <router-link class="default-button" to="/dashboard">Dashboard</router-link>
+                <router-link class="default-button" to="/competitions">Competitions</router-link>
             </nav>
         )
     }

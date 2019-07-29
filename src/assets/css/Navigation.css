@@ -2,17 +2,19 @@ nav {
     position: absolute;
     display: flex;
     flex-wrap: wrap;
-    height: 90vh;
+    height: calc(90vh - 1px);
+    max-height: calc(100vh - 101px);
     bottom: 0px;
     flex-flow: column;
-    box-sizing: border-box;
     background: #986a5e;
     overflow: hidden;
     width: 0px;
     min-width: 0px;
     padding: 0px;
-    padding-top: 10px;
     transition: 0.5s;
+    box-shadow: 5px 0 15px -5px;
+    box-sizing: content-box;
+    border-top: #bf9e60 solid 1px;
 }
 
 nav a {
@@ -22,6 +24,25 @@ nav a {
 
 nav.active {
     width: 8vw;
-    min-width: 150px;
-    padding: 10px;
+    min-width: 130px;
+}
+
+.default-button {
+    text-decoration: none;
+    color: white;
+    height: 50px;
+    line-height: 50px;
+    font-family: "Helvetica Neue", Helvetica;
+    font-size: 1.2em;
+    text-align: start;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    border-bottom: #bf9e60 solid 1px;
+    transition: 0.3s;
+}
+
+.router-link-active {
+    background: white;
+    color: #bf9e60;
 }

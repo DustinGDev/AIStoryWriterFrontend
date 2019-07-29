@@ -2,4 +2,9 @@
     background: #bf9e60;
     flex-direction: row;
     flex-grow: 1;
+    box-shadow: inset 0px 2px 15px;
+    overflow-y: scroll;
+    max-height: 90vh;
+    box-sizing: border-box;
+    padding: 30px;
 }

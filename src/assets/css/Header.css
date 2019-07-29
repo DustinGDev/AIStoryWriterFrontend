@@ -1,7 +1,9 @@
 header {
     height: 10vh;
+    min-height: 100px;
     width: 100%;
-    padding: 20px;
+    padding: calc(15px + 0.2vh) 30px;
     box-sizing: border-box;
     background: #785b52;
+    z-index: 5;
 }
