@@ -7,7 +7,7 @@
     box-shadow: 7px 7px 70px #5491cf;
     border: #c8c8c8 4px;
     border-style: ridge groove groove ridge;
-    position: relative;
+    position: absolute;
     transition: 0.5s;
 }
 

@@ -1,0 +1,26 @@
+.sign-in-out {
+    align-self: flex-end;
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #bf9e60;
+    font-size: 1.5em;
+}
+
+.sign-in-out button {
+    height: fit-content;
+    color: #bf9e60;
+    background: none;
+    border: none;
+    font-size: 0.8em;
+    transition: 0.3s;
+}
+
+.sign-in-out button:hover {
+    color: white;
+}
+
+.sign-in-out span {
+    margin: 5px;
+}
