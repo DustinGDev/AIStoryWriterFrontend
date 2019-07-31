@@ -21,7 +21,7 @@ export default {
         <Navigation activeNav={this.activeNav}/>
         <Header activeNav={this.activeNav} onNavigationStateChange={() => {this.activeNav = !this.activeNav}}/>
         <Content test={this.test}/>
-        <modals-container/>
+        <modals-container onFormClicked={(data) => console.log('form', data)}/>
       </main>
     )
   }
