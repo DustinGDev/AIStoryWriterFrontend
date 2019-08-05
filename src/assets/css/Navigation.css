@@ -42,6 +42,11 @@ nav.active {
     transition: 0.3s;
 }
 
+.default-button:hover {
+    background: white;
+    color: #bf9e60;
+}
+
 .router-link-active {
     background: white;
     color: #bf9e60;

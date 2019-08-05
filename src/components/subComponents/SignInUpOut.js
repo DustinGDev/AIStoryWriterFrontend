@@ -10,9 +10,13 @@ export default {
                 {
                     this.loggedIn ? <button onClick={() => console.log('not yet implemented')}>Sign Out</button> :
                         [
-                            <button onClick={() => this.$modal.show(SignInForm, {sendForm: (data, close) => {console.log('sendform', data), close()}})}>Sign In</button>,
+                            <button onClick={() => this.$modal.show(SignInForm, {
+                                sendForm: (data, close) => {this.$emit(''); close()
+                                }})}>Sign In</button>,
                             <span>|</span>,
-                            <button onClick={() => this.$modal.show(SignUpForm)}>Sign Up</button>
+                            <button onClick={() => this.$modal.show(SignUpForm, {
+                                sendForm: (data, close) => {this.$emit(''); close()
+                                }})}>Sign Up</button>
                         ]
                 }
             </div>
