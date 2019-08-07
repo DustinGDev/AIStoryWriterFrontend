@@ -25,7 +25,7 @@ export default {
     },
     render(h) {
         return (
-            <div class={"main-nav-button" + (this.activeNav ? " active" : '')} onClick={() => this.$emit('navigationStateChange')}>
+            <div class="btn btn-large" onClick={() => this.$emit('navigationStateChange')}>
                 <table>
                     <tbody>
                         {this.generateGate(h)}

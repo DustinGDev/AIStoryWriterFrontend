@@ -1,4 +1,4 @@
-* {
+/** {
     margin: 0;
     padding: 0;
 }
@@ -11,4 +11,4 @@ main {
     flex-direction: row;
     height: 100vh;
     flex-flow: column;
-}
+}*/

@@ -1,4 +1,4 @@
-nav {
+/*nav {
     position: absolute;
     display: flex;
     flex-wrap: wrap;
@@ -50,4 +50,4 @@ nav.active {
 .router-link-active {
     background: white;
     color: #bf9e60;
-}
+}*/
