@@ -1,9 +1,13 @@
-/*.welcome {
-    font-family: "Helvetica Neue", Helvetica;
-    color: #4b3b36;
+#welcome-logo {
+    background: #47545D;
+    background-image: url('./../../../assets/logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 80vh;
 }
 
-.welcome h1 {
-    text-align: center;
-    margin-bottom: 20px;
-}*/
+@media screen and (max-width: 576px) {
+    #welcome-logo {
+        background-image: url('./../../../assets/logo-small.png');
+    }
+}
