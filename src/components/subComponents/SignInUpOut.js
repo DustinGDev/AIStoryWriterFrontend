@@ -6,15 +6,14 @@ export default {
     props: ['loggedIn'],
     render(h) {
         return (
-            <div class="sign-in-out">
+            <div class="btn-group-vertical">
                 {
-                    this.loggedIn ? <button onClick={() => console.log('not yet implemented')}>Sign Out</button> :
+                    this.loggedIn ? <button class="btn btn-outline-secondary" onClick={() => console.log('not yet implemented')}>Sign Out</button> :
                         [
-                            <button onClick={() => this.$modal.show(SignInForm, {
+                            <button class="btn btn-outline-secondary" onClick={() => this.$modal.show(SignInForm, {
                                 sendForm: (data, close) => {this.$emit(''); close()
                                 }})}>Sign In</button>,
-                            <span>|</span>,
-                            <button onClick={() => this.$modal.show(SignUpForm, {
+                            <button class="btn btn-outline-secondary" onClick={() => this.$modal.show(SignUpForm, {
                                 sendForm: (data, close) => {this.$emit(''); close()
                                 }})}>Sign Up</button>
                         ]

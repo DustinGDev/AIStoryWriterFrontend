@@ -1,7 +1,7 @@
 import './../../assets/css/subComponents/MainNavButton.css';
 
 export default {
-    props: ['gateDensity', 'activeNav'],
+    props: ['gateDensity', 'loggedIn'],
     methods: {
         generateGate(h, gateDensity = this.gateDensity) {
             const rows = [];
@@ -25,7 +25,7 @@ export default {
     },
     render(h) {
         return (
-            <div class="main-nav-button" onClick={() => this.$emit('navigationStateChange')}>
+            <div class="main-nav-button">
                 <table>
                     <tbody>
                         {this.generateGate(h)}

@@ -6,7 +6,7 @@ export default {
   data: function() {
     return {
       test: 'testvals',
-      activeNav: false
+      loggedIn: true
     }
   },
   mounted() {
@@ -17,7 +17,7 @@ export default {
   render() {
     return(
       <main>
-        <Navigation activeNav={this.activeNav}/>
+        <Navigation loggedIn={this.loggedIn}/>
         <Content test={this.test}/>
         <modals-container onFormClicked={(data) => console.log('form', data)}/>
       </main>

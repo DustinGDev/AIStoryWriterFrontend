@@ -8,6 +8,9 @@
     border: #c8c8c8 4px;
     border-style: ridge groove groove ridge;
     transition: 0.5s;
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
 
 .main-nav-button table {
