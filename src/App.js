@@ -1,6 +1,5 @@
 import Navigation from './components/Navigation';
 import Content from './components/Content';
-import Header from './components/Header';
 import './assets/css/App.css';
 
 export default {
@@ -19,7 +18,6 @@ export default {
     return(
       <main>
         <Navigation activeNav={this.activeNav}/>
-        <Header activeNav={this.activeNav} onNavigationStateChange={() => {this.activeNav = !this.activeNav}}/>
         <Content test={this.test}/>
         <modals-container onFormClicked={(data) => console.log('form', data)}/>
       </main>

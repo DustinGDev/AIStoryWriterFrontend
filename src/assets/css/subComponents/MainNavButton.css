@@ -1,4 +1,4 @@
-/*.main-nav-button {
+.main-nav-button {
     overflow: hidden;
     height: 64px;
     width: 64px;
@@ -7,7 +7,6 @@
     box-shadow: 7px 7px 70px #5491cf;
     border: #c8c8c8 4px;
     border-style: ridge groove groove ridge;
-    position: absolute;
     transition: 0.5s;
 }
 
@@ -41,4 +40,4 @@
 .main-nav-button.active {
     background: #ed535b;
     box-shadow: 7px 7px 70px #ed535b;
-}*/
+}
