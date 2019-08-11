@@ -8,12 +8,12 @@ export default {
         return (
             <div class="btn-group-vertical">
                 {
-                    this.loggedIn ? <button class="btn btn-outline-secondary" onClick={() => console.log('not yet implemented')}>Sign Out</button> :
+                    this.loggedIn ? <button class="btn btn-outline-info" onClick={() => console.log('not yet implemented')}>Sign Out</button> :
                         [
-                            <button class="btn btn-outline-secondary" onClick={() => this.$modal.show(SignInForm, {
+                            <button class="btn btn-outline-info" onClick={() => this.$modal.show(SignInForm, {
                                 sendForm: (data, close) => {this.$emit(''); close()
                                 }})}>Sign In</button>,
-                            <button class="btn btn-outline-secondary" onClick={() => this.$modal.show(SignUpForm, {
+                            <button class="btn btn-outline-info" onClick={() => this.$modal.show(SignUpForm, {
                                 sendForm: (data, close) => {this.$emit(''); close()
                                 }})}>Sign Up</button>
                         ]

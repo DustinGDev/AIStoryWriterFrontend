@@ -10,21 +10,21 @@ export default {
                 <a class="navbar-brand" href="#">
                     <MainNavButton gateDensity={12} loggedIn={this.loggedIn} />
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto float-right">
-                        <li class="nav-item active px-3 py-2">
+                        <li class="nav-item active py-2 pr-3">
                             <router-link class="btn btn-outline-secondary" to="/welcome">Welcome</router-link>
                         </li>
-                        <li class="nav-item active px-3 py-2">
+                        <li class="nav-item active py-2 pr-3">
                             <router-link class="btn btn-outline-secondary" to="/dashboard">Dashboard</router-link>
                         </li>
-                        <li class="nav-item active px-3 py-2">
+                        <li class="nav-item active py-2 pr-3">
                             <router-link class="btn btn-outline-secondary" to="/competitions">Competitions</router-link>
                         </li>
-                        <li>
+                        <li class="nav-item active py-2 pr-3">
                             <SignInUpOut loggedIn={this.loggedIn} />
                         </li>
                     </ul>

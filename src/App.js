@@ -6,7 +6,7 @@ export default {
   data: function() {
     return {
       test: 'testvals',
-      loggedIn: true
+      loggedIn: false
     }
   },
   mounted() {
